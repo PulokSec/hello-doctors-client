@@ -1,0 +1,148 @@
+html,
+body {
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+	height: 100%;
+}
+* {
+	transition: .3s;
+}
+#root {
+	height: 100%;
+}
+a:hover {
+	text-decoration: none;
+}
+.navbar-expand-sm .navbar-nav .nav-link {
+	padding-left: 1.4rem;
+}
+/* Theming */
+.btn-primary {
+	background-image: linear-gradient(75deg, #19d3ae, #0fcfec) !important;
+	border-color: transparent !important;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.text-primary {
+	color: #1cc7c1 !important;
+}
+.btn-info {
+	background-color: #76c5ff !important;
+	border-color: transparent !important;
+}
+.btn-warning {
+	background-color: #ffd076 !important;
+	border-color: transparent !important;
+}
+.btn-success {
+	background-color: #38af86 !important;
+	border-color: transparent !important;
+}
+.btn-danger {
+	background-color: #ff7676 !important;
+	border-color: transparent !important;
+}
+.bg-primary {
+	background-color: #1cc7c1 !important;
+}
+.bg-dark {
+	background-color: #3a4256 !important;
+}
+.bg-info {
+	background-color: #3da5f4 !important;
+}
+.bg-success {
+	background-color: #00c689 !important;
+}
+.bg-warning {
+	background-color: #fda006 !important;
+}
+.bg-danger {
+	background-color: #f1536e !important;
+}
+
+p {
+	line-height: 2;
+}
+
+.style-color {
+	color: #3a4256;
+}
+
+.logo-name {
+	font-weight: 500;
+	font-size: 22px;
+}
+
+.heder-content {
+	height: 100vh;
+	position: relative;
+}
+
+.heder-content::after {
+	z-index: -50;
+	height: 100vh;
+	content: ' ';
+	position: absolute;
+	top: 0;
+	width: 33%;
+	right: 0;
+	background-color: #3a4256;
+}
+
+@media (max-width: 777px) {
+	.heder-content::after {
+		background-color: transparent;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		color: rgba(0, 0, 0, .5) !important;
+	}
+	.features-service h1 {
+		font-size: 25px;
+	}
+}
+
+.text-gray {
+	color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.reviewForm input,
+.doctorForm input {
+	height: 3rem;
+	border: none;
+}
+.reviewForm textarea,
+.doctorForm textarea {
+	border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgb(251, 251, 251) !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #efefef !important;
+	border-radius: 5px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(176, 178, 180) !important;
+}
+
+@media (max-width: 800px) {
+	#modal-responsive {
+		width: 90% !important;
+	}
+
+	#responsive-dashboard {
+		margin-top: 450px;
+	}
+}
