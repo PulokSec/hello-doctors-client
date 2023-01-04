@@ -23,7 +23,7 @@ const AppointmentTable = () => {
 		const apId = selectAppointment.id;
 		const time = '9:00 AM - 11:00 AM';
 		const dataToStore = { apId, date, time, patientInfo, status: 'Pending' };
-		fetch('https://hello-doctors.herokuapp.com/makeBooking', {
+		fetch('https://hello-doctors-api.onrender.com/makeBooking', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json'

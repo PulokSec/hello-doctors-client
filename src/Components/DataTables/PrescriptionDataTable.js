@@ -45,7 +45,7 @@ const PrescriptionDataTable = () => {
 
 		// Storing Data to Database
 
-		fetch('https://hello-doctors.herokuapp.com/updateDisease', {
+		fetch('https://hello-doctors-api.onrender.com/updateDisease', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json'

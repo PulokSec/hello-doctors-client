@@ -28,7 +28,7 @@ const MeetingLinkModal = (props) => {
 		e.target.reset();
 		console.log(newLink);
 
-		fetch('https://hello-doctors.herokuapp.com/addedMeetingLink', {
+		fetch('https://hello-doctors-api.onrender.com/addedMeetingLink', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json'

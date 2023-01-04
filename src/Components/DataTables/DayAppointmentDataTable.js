@@ -28,7 +28,7 @@ const DayAppointmentDataTable = () => {
 		ContextData.setAllBookedAppointments(newDataArray);
 
 		// Storing Data To Database
-		fetch('https://hello-doctors.herokuapp.com/updateVisitingStatus', {
+		fetch('https://hello-doctors-api.onrender.com/updateVisitingStatus', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json'

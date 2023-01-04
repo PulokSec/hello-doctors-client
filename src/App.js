@@ -32,7 +32,7 @@ function App() {
 	// Load all Doctors Information
 	useEffect(
 		() => {
-			fetch('https://hello-doctors.herokuapp.com/doctors')
+			fetch('https://hello-doctors-api.onrender.com/doctors')
 				.then((res) => res.json())
 				.then((data) => {
 				setAllAppointments(data);
@@ -45,7 +45,7 @@ function App() {
 	// Load all Appointments and Patients Information
 	useEffect(
 		() => {
-			fetch('https://hello-doctors.herokuapp.com/bookedAppointments')
+			fetch('https://hello-doctors-api.onrender.com/bookedAppointments')
 				.then((res) => res.json())
 				.then((data) => setAllBookedAppointments(data));
 		},
@@ -53,7 +53,7 @@ function App() {
 	);
 
 useEffect(() => {
-		fetch(`https://hello-doctors.herokuapp.com/users/${loggedInUser.email}`)
+		fetch(`https://hello-doctors-api.onrender.com/users/${loggedInUser.email}`)
 				.then(res => res.json())
 				.then(data => 
 						setAdmin(data.admin)

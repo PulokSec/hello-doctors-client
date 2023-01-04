@@ -31,7 +31,7 @@ const PrescriptionModal = (props) => {
 		const data = { id: props.selectAppointment._id, prescription: newPrescription };
 		e.target.reset();
 
-		fetch('https://hello-doctors.herokuapp.com/updatePrescription', {
+		fetch('https://hello-doctors-api.onrender.com/updatePrescription', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json'

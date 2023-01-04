@@ -17,7 +17,7 @@ const AddAdmin = () => {
     const handleAdminSubmit = e => {
         const user = { email };
         console.log(user)
-        fetch('https://hello-doctors.herokuapp.com/users/admin', {
+        fetch('https://hello-doctors-api.onrender.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

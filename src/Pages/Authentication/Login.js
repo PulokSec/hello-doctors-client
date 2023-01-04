@@ -255,7 +255,7 @@ const Login = () => {
 
 	const saveUser = (email, displayName, method) => {
 		const user = { email, displayName };
-		fetch('https://hello-doctors.herokuapp.com/users', {
+		fetch('https://hello-doctors-api.onrender.com/users', {
 				method: method,
 				headers: {
 						'content-type': 'application/json'

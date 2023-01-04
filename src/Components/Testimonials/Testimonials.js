@@ -12,7 +12,7 @@ const Testimonials = () => {
     const [reviews, SetReviews] = useState([]);
 
     useEffect(() => {
-      fetch("https://hello-doctors.herokuapp.com/allReviews")
+      fetch("https://hello-doctors-api.onrender.com/allReviews")
         .then(res => res.json())
         .then(data => {
           SetReviews(data);

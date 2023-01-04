@@ -49,7 +49,7 @@ const PatientAppointmentPaymentTable = () => {
 		// Storing Data To Database
 		const paymentData = { id: SelectedApForModify._id, paymentID };
 
-		fetch('https://hello-doctors.herokuapp.com/addedPayment', {
+		fetch('https://hello-doctors-api.onrender.com/addedPayment', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json'

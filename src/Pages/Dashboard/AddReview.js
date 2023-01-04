@@ -34,7 +34,7 @@ const AddReview = () => {
 
 	const handleReviewSubmit = (event) => {
 		event.preventDefault();
-		fetch('https://hello-doctors.herokuapp.com/addReview', {
+		fetch('https://hello-doctors-api.onrender.com/addReview', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(newReview)

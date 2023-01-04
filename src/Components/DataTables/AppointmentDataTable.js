@@ -49,7 +49,7 @@ const AppointmentDataTable = () => {
 
 		// Storing Data to Database
 
-		fetch('https://hello-doctors.herokuapp.com/updateAppointmentTime', {
+		fetch('https://hello-doctors-api.onrender.com/updateAppointmentTime', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json'
@@ -76,7 +76,7 @@ const AppointmentDataTable = () => {
 		ContextData.setAllBookedAppointments(newDataArray);
 
 		// Storing Data in database
-		fetch('https://hello-doctors.herokuapp.com/updateBookingStatus', {
+		fetch('https://hello-doctors-api.onrender.com/updateBookingStatus', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json'

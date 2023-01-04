@@ -2,7 +2,7 @@
 
 A Single page web app with dashboard  where people can pick the date and time and fix an appointment. A doctor can review his appointments and prescribe medicine to a Patient from his dashboard.
 
-[Live Website](https://hello-doctors-528fc.web.app/) | [Live API Server](https://hello-doctors.herokuapp.com/)
+[Live Website](https://hello-doctors-528fc.web.app/) | [Live API Server](https://hello-doctors-api.onrender.com/)
 
 #### Features :
 * Online appointment making

@@ -55,7 +55,7 @@ const AddDoctor = () => {
       });
 			formData.append('img', url)
 		}
-		fetch('https://hello-doctors.herokuapp.com/addADoctor', {
+		fetch('https://hello-doctors-api.onrender.com/addADoctor', {
 			method: 'POST',
 			body: formData
 		})
