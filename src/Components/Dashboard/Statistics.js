@@ -29,7 +29,7 @@ const Statistics = () => {
             contextData.setAllPatients(uniquePatients);
         },
         
-		[  contextData.allBookedAppointments ]
+		[contextData]
 	);
 
  
